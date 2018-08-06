@@ -4,16 +4,16 @@
     height: 100vh;
 }
 
-.mdb-navbar {
+.mdbnavbar {
     background-color: transparent;
 }
 
 .top-nav-collapse {
-    background-color: #4285F4;
+    background-color: rgb(74, 48, 99);
 }
 
 @media only screen and (max-width: 768px) {
     .navbar {
-        background-color: #4285F4;
+        background-color: rgb(74, 48, 99);
     }
 }
