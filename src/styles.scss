@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+a.nav-link:link{
+    color:#ffffff;
+    text-decoration: none;
+}
+a.nav-link:visited{
+    color:#ff0000bd;
+    text-decoration: none;
+}
+a.nav-link:hover{
+    color:#240df5c4;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    background-color: fade-out($color: #4d6b5f, $amount: .50)
+}
+
+.bottom-align{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.bio{
+    min-height: 100vh;
+    margin-top: 0;
+    right: 0;
+}
+
+.card-body p{
+    padding-bottom: 1vh;
+}
+
+.center{
+    margin:auto;
+    max-width: 70vw;
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.images-cards{
+    position: relative;
+    float: left;
+    width:  100px;
+    height: 100px;
+    background-position: 50% 50%;
+}
+
+.navbar-mwp{
+     /* Sizing */
+    min-height: 100vh;
+    padding-top:2vh;
+}
+
+.row{
+    margin-bottom: 2vh;    
+}
