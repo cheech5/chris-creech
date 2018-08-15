@@ -1,6 +1,5 @@
-.navbar-mwp {
-    min-height: 100vh;
-    padding-top: 2vh
+.background-color {
+    background-color: rgb(126, 45, 45)
 }
 
 .container {
@@ -9,4 +8,17 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+
+h1 {
+    color: white;
+}
+
+h3 {
+    color: antiquewhite;
+}
+
+.navbar-mwp {
+    min-height: 100vh;
+    padding-top: 2vh
 }

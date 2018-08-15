@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { InputsModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md';
 import { MatCardModule } from '@angular/material/card';
 
 import { AppComponent } from './app.component';
@@ -11,6 +12,11 @@ import { MyWorkComponent } from './my-work/my-work.component';
 import { HireMeComponent } from './hire-me/hire-me.component';
 import { DefaultCardComponent } from './my-work/default-card/default-card.component';
 import { DefaultButtonCardComponent } from './my-work/default-button-card/default-button-card.component';
+import { HitMyLineFormComponent } from './footer/hit-my-line-form/hit-my-line-form.component';
+import { FidelityCardComponent } from './hire-me/fidelity-card/fidelity-card.component';
+import { EkuFedworkaidCardComponent } from './hire-me/eku-fedworkaid-card/eku-fedworkaid-card.component';
+import { IherbCardComponent } from './hire-me/iherb-card/iherb-card.component';
+import { TenteCardComponent } from './hire-me/tente-card/tente-card.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +26,20 @@ import { DefaultButtonCardComponent } from './my-work/default-button-card/defaul
     MyWorkComponent,
     HireMeComponent,
     DefaultCardComponent,
-    DefaultButtonCardComponent
+    DefaultButtonCardComponent,
+    HitMyLineFormComponent,
+    FidelityCardComponent,
+    EkuFedworkaidCardComponent,
+    IherbCardComponent,
+    TenteCardComponent
   ],
   imports: [
     BrowserModule,
     [BrowserAnimationsModule],
     [MatCardModule],
+    [InputsModule],
+    [WavesModule],
+    [ButtonsModule],
     MDBBootstrapModule.forRoot()
   ],
   exports: [MatCardModule],
