@@ -23,8 +23,7 @@
     }
     function l(r) {
         for (var t = 1; t < arguments.length; t++) {
-            var o = null != arguments[t] ? arguments[t] : {}
-              , e = Object.keys(o);
+            var o = null != arguments[t] ? arguments[t] : {}, e = Object.keys(o);
             "function" == typeof Object.getOwnPropertySymbols && (e = e.concat(Object.getOwnPropertySymbols(o).filter(function(t) {
                 return Object.getOwnPropertyDescriptor(o, t).enumerable
             }))),
@@ -47,8 +46,7 @@
     var r, n, o, a, c, u, f, d, g, _, m, p, v, y, E, C, T, b, S, I, A, D, w, N, O, k, P, j, H, L, R, x, W, U, q, F, K, M, Q, B, V, Y, z, J, Z, G, $, X, tt, et, nt, it, rt, ot, st, at, lt, ct, ht, ut, ft, dt, gt, _t, mt, pt, vt, yt, Et, Ct, Tt, bt, St, It, At, Dt, wt, Nt, Ot, kt, Pt, jt, Ht, Lt, Rt, xt, Wt, Ut, qt, Ft, Kt, Mt, Qt, Bt, Vt, Yt, zt, Jt, Zt, Gt, $t, Xt, te, ee, ne, ie, re, oe, se, ae, le, ce, he, ue, fe, de, ge, _e, me, pe, ve, ye, Ee, Ce, Te, be, Se, Ie, Ae, De, we, Ne, Oe, ke, Pe, je, He, Le, Re, xe, We, Ue, qe, Fe, Ke, Me, Qe, Be, Ve, Ye, ze, Je, Ze, Ge, $e, Xe, tn, en, nn, rn, on, sn, an, ln, cn, hn, un, fn, dn, gn, _n, mn, pn, vn, yn, En, Cn, Tn, bn, Sn, In, An, Dn, wn, Nn, On, kn, Pn, jn, Hn, Ln, Rn, xn, Wn, Un, qn, Fn = function(i) {
         var e = "transitionend";
         function t(t) {
-            var e = this
-              , n = !1;
+            var e = this, n = !1;
             return i(this).one(l.TRANSITION_END, function() {
                 n = !0
             }),
@@ -96,10 +94,10 @@
             typeCheckConfig: function(t, e, n) {
                 for (var i in n)
                     if (Object.prototype.hasOwnProperty.call(n, i)) {
-                        var r = n[i]
-                          , o = e[i]
-                          , s = o && l.isElement(o) ? "element" : (a = o,
-                        {}.toString.call(a).match(/\s([a-z]+)/i)[1].toLowerCase());
+                        var r = n[i], 
+                            o = e[i], 
+                            s = o && l.isElement(o) ? "element" : 
+                            (a = o,{}.toString.call(a).match(/\s([a-z]+)/i)[1].toLowerCase());
                         if (!new RegExp(r).test(s))
                             throw new Error(t.toUpperCase() + ': Option "' + i + '" provided type "' + s + '" but expected type "' + r + '".')
                     }
@@ -136,27 +134,21 @@
             var e = this._element;
             t && (e = this._getRootElement(t)),
             this._triggerCloseEvent(e).isDefaultPrevented() || this._removeElement(e)
-        }
-        ,
+        },
         t.dispose = function() {
             r.removeData(this._element, o),
             this._element = null
-        }
-        ,
+        },
         t._getRootElement = function(t) {
-            var e = Fn.getSelectorFromElement(t)
-              , n = !1;
+            var e = Fn.getSelectorFromElement(t), n = !1;
             return e && (n = document.querySelector(e)),
             n || (n = r(t).closest("." + f)[0]),
             n
-        }
-        ,
+        },
         t._triggerCloseEvent = function(t) {
             var e = r.Event(u.CLOSE);
-            return r(t).trigger(e),
-            e
-        }
-        ,
+            return r(t).trigger(e),e
+        },
         t._removeElement = function(e) {
             var n = this;
             if (r(e).removeClass(g),
@@ -167,29 +159,24 @@
                 }).emulateTransitionEnd(t)
             } else
                 this._destroyElement(e)
-        }
-        ,
+        },
         t._destroyElement = function(t) {
             r(t).detach().trigger(u.CLOSED).remove()
-        }
-        ,
+        },
         i._jQueryInterface = function(n) {
             return this.each(function() {
-                var t = r(this)
-                  , e = t.data(o);
+                var t = r(this), e = t.data(o);
                 e || (e = new i(this),
                 t.data(o, e)),
                 "close" === n && e[n](this)
             })
-        }
-        ,
+        },
         i._handleDismiss = function(e) {
             return function(t) {
                 t && t.preventDefault(),
                 e.close(this)
             }
-        }
-        ,
+        },
         s(i, null, [{
             key: "VERSION",
             get: function() {
@@ -204,8 +191,7 @@
     r.fn[n].noConflict = function() {
         return r.fn[n] = c,
         _._jQueryInterface
-    }
-    ,
+    },
     _), Mn = (p = "button",
     y = "." + (v = "bs.button"),
     E = ".data-api",
