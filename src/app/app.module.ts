@@ -13,10 +13,10 @@ import { HireMeComponent } from './hire-me/hire-me.component';
 import { DefaultCardComponent } from './my-work/default-card/default-card.component';
 import { DefaultButtonCardComponent } from './my-work/default-button-card/default-button-card.component';
 import { HitMyLineFormComponent } from './footer/hit-my-line-form/hit-my-line-form.component';
-import { FidelityCardComponent } from './hire-me/fidelity-card/fidelity-card.component';
-import { EkuFedworkaidCardComponent } from './hire-me/eku-fedworkaid-card/eku-fedworkaid-card.component';
-import { IherbCardComponent } from './hire-me/iherb-card/iherb-card.component';
-import { TenteCardComponent } from './hire-me/tente-card/tente-card.component';
+import { FidelityCardComponent } from './my-career/fidelity-card/fidelity-card.component';
+import { EkuFedworkaidCardComponent } from './my-career/eku-fedworkaid-card/eku-fedworkaid-card.component';
+import { IherbCardComponent } from './my-career/iherb-card/iherb-card.component';
+import { TenteCardComponent } from './my-career/tente-card/tente-card.component';
 import { DefaultModalComponent } from './default-modal/default-modal.component';
 import { MyCareerComponent } from './my-career/my-career.component';
 
