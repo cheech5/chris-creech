@@ -17,6 +17,8 @@ import { FidelityCardComponent } from './hire-me/fidelity-card/fidelity-card.com
 import { EkuFedworkaidCardComponent } from './hire-me/eku-fedworkaid-card/eku-fedworkaid-card.component';
 import { IherbCardComponent } from './hire-me/iherb-card/iherb-card.component';
 import { TenteCardComponent } from './hire-me/tente-card/tente-card.component';
+import { DefaultModalComponent } from './default-modal/default-modal.component';
+import { MyCareerComponent } from './my-career/my-career.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { TenteCardComponent } from './hire-me/tente-card/tente-card.component';
     FidelityCardComponent,
     EkuFedworkaidCardComponent,
     IherbCardComponent,
-    TenteCardComponent
+    TenteCardComponent,
+    DefaultModalComponent,
+    MyCareerComponent
   ],
   imports: [
     BrowserModule,
