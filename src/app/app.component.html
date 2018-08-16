@@ -2,23 +2,28 @@
     <app-header></app-header>
         <!--Main Layout-->
         <main class="container">
-            <section class="navbar-mwp" id="navbar-mwp">
-                <h1 class="font-weight-bold">MyWork</h1>
+            <div class="text-center py-5 container">
+                <h1 class="navbar-mwp font-weight-bold" id="navbar-mwp">MyWork</h1>
                 <h3>Take a look at My Work with a plethora of different technologies.</h3>
-                <hr>
+                    <hr>
                     <!--Spied element-->
                     <app-my-work></app-my-work>
                     <!--/.Spied element--> 
-             </section>
+             </div>
+             <div class="text-center py-5 container">
+                    <h1 class="navbar-mcp font-weight-bold" id="navbar-mcp">MyCareer</h1>
+                    <hr>
+                    <!--Spied element-->
+                    <app-my-career></app-my-career>
+                    <!--/.Spied element-->
+             </div>
             <div class="text-center py-5 container">
-                <div class="col-md-12">
-                    <h1 id="navbar-hmp" class="font-weight-bold">HireMe</h1>
+                    <h1 class="navbar-hmp font-weight-bold" id="navbar-hmp">HireMe</h1>
                     <hr>
                     <!--Spied element-->
                     <app-hire-me></app-hire-me>
                     <!--/.Spied element-->
-                    </div>
-                 </div>
+             </div>
             </main>
         <!--Main Layout-->
      <app-footer></app-footer>
