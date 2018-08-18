@@ -11,6 +11,7 @@ import { MyWorkComponent } from './my-work/my-work.component';
 import { HireMeComponent } from './hire-me/hire-me.component';
 import { DefaultCardComponent } from './my-work/default-card/default-card.component';
 import { DefaultButtonCardComponent } from './my-work/default-button-card/default-button-card.component';
+import { TictactoePythonCardComponent } from './my-work/tictactoe-python-card/tictactoe-python-card.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DefaultButtonCardComponent } from './my-work/default-button-card/defaul
     MyWorkComponent,
     HireMeComponent,
     DefaultCardComponent,
-    DefaultButtonCardComponent
+    DefaultButtonCardComponent,
+    TictactoePythonCardComponent
   ],
   imports: [
     BrowserModule,
