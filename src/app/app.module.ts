@@ -12,7 +12,6 @@ import { MyWorkComponent } from './my-work/my-work.component';
 import { HireMeComponent } from './hire-me/hire-me.component';
 import { DefaultCardComponent } from './my-work/default-card/default-card.component';
 import { DefaultButtonCardComponent } from './my-work/default-button-card/default-button-card.component';
-<<<<<<< HEAD
 import { HitMyLineFormComponent } from './footer/hit-my-line-form/hit-my-line-form.component';
 import { FidelityCardComponent } from './my-career/fidelity-card/fidelity-card.component';
 import { EkuFedworkaidCardComponent } from './my-career/eku-fedworkaid-card/eku-fedworkaid-card.component';
@@ -20,9 +19,8 @@ import { IherbCardComponent } from './my-career/iherb-card/iherb-card.component'
 import { TenteCardComponent } from './my-career/tente-card/tente-card.component';
 import { DefaultModalComponent } from './default-modal/default-modal.component';
 import { MyCareerComponent } from './my-career/my-career.component';
-=======
 import { TictactoePythonCardComponent } from './my-work/tictactoe-python-card/tictactoe-python-card.component';
->>>>>>> ccps-my-work-branch
+
 
 @NgModule({
   declarations: [
@@ -33,17 +31,14 @@ import { TictactoePythonCardComponent } from './my-work/tictactoe-python-card/ti
     HireMeComponent,
     DefaultCardComponent,
     DefaultButtonCardComponent,
-<<<<<<< HEAD
     HitMyLineFormComponent,
     FidelityCardComponent,
     EkuFedworkaidCardComponent,
     IherbCardComponent,
     TenteCardComponent,
     DefaultModalComponent,
-    MyCareerComponent
-=======
+    MyCareerComponent,
     TictactoePythonCardComponent
->>>>>>> ccps-my-work-branch
   ],
   imports: [
     BrowserModule,
