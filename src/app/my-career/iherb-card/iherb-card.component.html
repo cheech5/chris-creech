@@ -1,25 +1,26 @@
 <!-- iHerb -->
 <div class="card" style="width: 16rem;">
-    <img class="card-img-top" src="../../../assets/images/iherb.png" alt="Card image cap" style="height:15rem;background-repeat: no-repeat; background-size: cover;">
+    <img class="card-img-top" src="../../../assets/images/iherb.jpg" alt="Card image cap" style="height:15rem;background-repeat: no-repeat; background-size: cover;">
     <div class="card-body">
         <h5 class="card-title">iHerb</h5>
         <h6 class="card-subtitle mb-2 text-muted">05/2016 - 08/2016</h6>
         <hr>
         <p class="card-text">IT Support Specialist</p>
-        <br>
-        <button type="button" mdbBtn color="success" 
-                class="waves-light" data-toggle="modal" 
-                data-target="#myModal" (click)="frame.show()"
-                mdbWavesEffect>View More
-         </button>
+        <div class="d-flex justify-content-center">
+            <button type="button" mdbBtn color="success" 
+                    class="waves-light" data-toggle="modal" 
+                    data-target="#myModal" (click)="frame.show()"
+                    mdbWavesEffect>View More
+             </button>
+          </div>
          <div mdbModal #frame="mdbModal" class="modal fade top" id="frameModalTop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
   aria-hidden="true">
   <div class="modal-dialog modal-notify modal-info" role="document">
     <!--Content-->
     <div class="modal-content">
       <!--Header-->
-      <div class="modal-header">
-        <p class="heading lead">Modal Info</p>
+      <div class="modal-header bg-dark">
+        <p class="heading lead">iHerb IT Support</p>
 
         <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame.hide()">
           <span aria-hidden="true" class="white-text">&times;</span>
@@ -29,18 +30,26 @@
       <!--Body-->
       <div class="modal-body">
         <div class="text-center">
-          <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iusto nulla aperiam blanditiis ad consequatur
-            in dolores culpa, dignissimos, eius non possimus fugiat. Esse ratione fuga, enim, ab officiis totam.</p>
+            <i class="fa fa-4x mb-3 animated rotateIn">
+                <img class="modal-header-img" src="../../../assets/images/iherb-modal-header-img.jpg">
+              </i>
+              <p>
+                Tier One IT Support
+              </p>
+              <ul class="list-group">
+                  <li class="list-group-item">Troubleshot factory floor computers</li>
+                  <li class="list-group-item">Maintained factory floor computers</li>
+                  <li class="list-group-item">Implemented factory-wide dual-monitor workstation concept</li>
+               </ul>
         </div>
       </div>
 
       <!--Footer-->
       <div class="modal-footer justify-content-center">
-        <a type="button" mdbBtn color="primary" class="waves-light" mdbWavesEffect>Get it now
-          <i class="fa fa-diamond ml-1"></i>
+        <a type="button" mdbBtn color="primary" class="waves-light" mdbWavesEffect>LinkedIn
+          <i class="fa fa-briefcase ml-1"></i>
         </a>
-        <a type="button" mdbBtn color="primary" outline="true" class="waves-effect" mdbWavesEffect (click)="frame.hide()">No, thanks</a>
+        <a type="button" mdbBtn color="red" class="waves-effect" mdbWavesEffect (click)="frame.hide()">Close</a>
       </div>
     </div>
     <!--/.Content-->

@@ -6,43 +6,56 @@
         <h6 class="card-subtitle mb-2 text-muted">08/2016 - 05/2018</h6>
         <hr>
         <p class="card-text">AE&T Student Employee</p>
-        <br>
-        <button type="button" mdbBtn color="success" 
-                class="waves-light" data-toggle="modal" 
-                data-target="#myModal" (click)="frame.show()"
-                mdbWavesEffect>View More
-         </button>
-         <div mdbModal #frame="mdbModal" class="modal fade top" id="frameModalTop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-notify modal-info" role="document">
-    <!--Content-->
-    <div class="modal-content">
-      <!--Header-->
-      <div class="modal-header">
-        <p class="heading lead">Modal Info</p>
-
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame.hide()">
-          <span aria-hidden="true" class="white-text">&times;</span>
-        </button>
-      </div>
-
-      <!--Body-->
-      <div class="modal-body">
-        <div class="text-center">
-          <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iusto nulla aperiam blanditiis ad consequatur
-            in dolores culpa, dignissimos, eius non possimus fugiat. Esse ratione fuga, enim, ab officiis totam.</p>
+        <div class="d-flex justify-content-center">
+          <button type="button" mdbBtn color="success" 
+                  class="waves-light" data-toggle="modal" 
+                  data-target="#myModal" (click)="frame.show()"
+                  mdbWavesEffect>View More
+           </button>
         </div>
-      </div>
+         <div mdbModal #frame="mdbModal" 
+              class="modal fade top" 
+              id="frameModalTop" tabindex="-1" 
+              role="dialog" 
+              aria-labelledby="myModalLabel"
+              aria-hidden="true">
+            <div class="modal-dialog modal-notify modal-info" role="document">
+              <!--Content-->
+              <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header bg-dark">
+                  <p class="heading lead">Applied Engineering & Tech.</p>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame.hide()">
+                    <span aria-hidden="true" class="white-text">&times;</span>
+                   </button>
+               </div>
 
-      <!--Footer-->
-      <div class="modal-footer justify-content-center">
-        <a type="button" mdbBtn color="primary" class="waves-light" mdbWavesEffect>Get it now
-          <i class="fa fa-diamond ml-1"></i>
-        </a>
-        <a type="button" mdbBtn color="primary" outline="true" class="waves-effect" mdbWavesEffect (click)="frame.hide()">No, thanks</a>
-      </div>
-    </div>
-    <!--/.Content-->
-  </div>
-</div>
+                <!--Body-->
+                <div class="modal-body">
+                  <div class="text-center">
+                    <i class="fa fa-4x mb-3 animated rotateIn">
+                      <img class="modal-header-img" src="../../../assets/images/eku-modal-header-img.jpg">
+                     </i>
+                    <p>
+                      Student worker for EKU's Applied Engineering and Technology Department.
+                     </p>
+                    <ul class="list-group">
+                      <li class="list-group-item">Created prospective student letters</li>
+                      <li class="list-group-item">Maintained student files</li>
+                      <li class="list-group-item">Safely discarded student information</li>
+                      <li class="list-group-item">Created Access Database for Aviation Dept.</li>
+                     </ul>
+                   </div>
+                 </div>
+
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+                  <a type="button" mdbBtn color="primary" class="waves-light" mdbWavesEffect>LinkedIn
+                    <i class="fa fa-briefcase ml-1"></i>
+                   </a>
+                  <a type="button" mdbBtn color="red" class="waves-effect" mdbWavesEffect (click)="frame.hide()">Close</a>
+                 </div>
+               </div>
+              <!--/.Content-->
+             </div>
+ </div>
