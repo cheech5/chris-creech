@@ -20,6 +20,8 @@ import { TenteCardComponent } from './my-career/tente-card/tente-card.component'
 import { DefaultModalComponent } from './default-modal/default-modal.component';
 import { MyCareerComponent } from './my-career/my-career.component';
 import { TictactoePythonCardComponent } from './my-work/tictactoe-python-card/tictactoe-python-card.component';
+import { PythonDataObjectsCardComponent } from './my-work/python-data-objects-card/python-data-objects-card.component';
+import { RecipeBookCardComponent } from './my-work/recipe-book-card/recipe-book-card.component';
 
 
 @NgModule({
@@ -38,7 +40,9 @@ import { TictactoePythonCardComponent } from './my-work/tictactoe-python-card/ti
     TenteCardComponent,
     DefaultModalComponent,
     MyCareerComponent,
-    TictactoePythonCardComponent
+    TictactoePythonCardComponent,
+    PythonDataObjectsCardComponent,
+    RecipeBookCardComponent
   ],
   imports: [
     BrowserModule,
