@@ -39,7 +39,7 @@
     "jquery": "^3.4.1",
     "moment": "^2.24.0",
     "npm-install-missing": "^0.1.4",
-    "parsejson": "0.0.3",
+    "parse-json": "^5.0.0",
     "popper.js": "^1.15.0",
     "rxjs": "^6.5.3",
     "url-loader": "^1.1.2",
