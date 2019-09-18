@@ -38,6 +38,7 @@
     "hoek": "^5.0.4",
     "jquery": "^3.4.1",
     "moment": "^2.24.0",
+    "node": "^12.10.0",
     "npm-install-missing": "^0.1.4",
     "parse-json": "^5.0.0",
     "popper.js": "^1.15.0",
